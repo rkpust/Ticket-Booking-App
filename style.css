@@ -1,4 +1,52 @@
+/*================= Ticket Booking App ======================= */
+
 .app-title {
     text-align: center;
     color: hotpink;
+}
+
+.ticket-app {
+    width: 500px;
+    max-width: 100%;
+    margin: 22px auto;
+    min-height: 300px;
+    padding: 11px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 2px #dedede;
+}
+
+.ticket-app__top {
+    display: flex;
+}
+
+.seat-states {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seat-state {
+    margin: 3px;
+    min-height: 5px;
+    min-width: 33px;
+    display: flex;
+    margin-right: 22px;
+  }
+
+  .seat-state__color {
+    width: 28px;
+    border: 1px solid gray;
+  }
+
+  .seat-state__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    margin-left: 4px;
+  }
+
+  .ticket-app__bottom {
+    display: flex;
+    margin-top: 11px;
 }
