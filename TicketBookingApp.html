@@ -13,9 +13,12 @@
         <div class="ticket-app">
             <div class="ticket-app__top">
                 <div class="seat-states">
-                    <div class="seat-state">
-                        <div class="seat-state__color"></div>
-                        <div class="seat-state__text"></div>
+                    <div class="seat-state" v-for="(value, key) in seatStates">
+                        <div
+                        class="seat-state__color"
+                        :style="{backgroundColor: value.color}"
+                        ></div>
+                        <div class="seat-state__text">{{ value.text }}</div>
                     </div>
                 </div>
             </div>
