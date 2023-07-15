@@ -83,6 +83,47 @@
   align-items: center;
 }
 
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 11px;
+}
+
+.seat {
+  margin: 4px;
+  border: 1px solid gray;
+  padding: 3px;
+  min-height: 11px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 28px;
+}
+
+.seat-sold {
+  background-color: red;
+  color: #fff;
+}
+
+.seat-booked {
+  background-color: gray;
+}
+
+.seat-selected {
+  background-color: #00ff00;
+}
+
+.seat:hover {
+  font-weight: bold;
+}
+
+.seat:nth-child(4n - 2) {
+  margin-right: 12px;
+}
+
+.seat:nth-child(4n - 1) {
+  margin-left: 12px;
+}
 .ticket-app__right {
-  
+flex: 1;
+padding-left: 22px;
 }

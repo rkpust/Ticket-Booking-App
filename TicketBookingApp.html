@@ -29,6 +29,18 @@
                             <div class="bus__door">Door</div>
                             <div class="bus__driver">Driver</div>
                         </div>
+
+                        <div class="seats">
+                            <div class="seat"
+                            :class="{
+                                'seat-sold': seat.type === 'sold',
+                                'seat-booked': seat.type === 'booked',
+                                'seat-selected': seat.type === 'selected',
+                            }"
+                            v-for="(seat, i) in seats"
+                            :key="seat.name"
+                            >{{ seat.name }}</div>
+                        </div>
                     </div>
                 </div>
                 <div class="ticket-app__right"></div>
