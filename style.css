@@ -48,7 +48,7 @@
 
   .ticket-app__bottom {
     display: flex;
-    margin-top: 11px;
+    margin-top: 15px;
 }
 
 .ticket-app__left {
@@ -86,7 +86,7 @@
 .seats {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 11px;
+  margin-top: 15px;
 }
 
 .seat {
@@ -96,7 +96,7 @@
   min-height: 11px;
   cursor: pointer;
   font-size: 15px;
-  width: 28px;
+  width: 20px;
 }
 
 .seat-sold {
@@ -117,12 +117,9 @@
 }
 
 .seat:nth-child(4n - 2) {
-  margin-right: 12px;
+  margin-right: 19px;
 }
 
-.seat:nth-child(4n - 1) {
-  margin-left: 12px;
-}
 .ticket-app__right {
 flex: 1;
 padding-left: 22px;
