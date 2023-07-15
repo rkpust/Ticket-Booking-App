@@ -44,7 +44,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="ticket-app__right"></div>
+                <div class="ticket-app__instruction"
+                v-if="selectedSeats.length === 0"
+                >
+                No seats have been selected.<br/>
+                You can purchase a maximum of 3 seats.
+                </div>
+                <div class="ticket-app__right" v-else>
+                    {{ selectedSeats }}
+                </div>
             </div>
         </div>
     </div>

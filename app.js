@@ -143,7 +143,12 @@ createApp({
             ]
         };
     },
-    computed: {},
+    computed: {
+      selectedSeats() {
+        let ss = this.seats.filter(item => item.type === "selected");
+        return ss;
+      }
+    },
 
     methods: {
       handleClick(i) {
@@ -154,8 +159,14 @@ createApp({
           return;
         }
 
-        clickedSeat.type =
-        clickedSeat.type === "selected" ? "available" : "selected";
+        if(this.selectedSeats.length > 2) {
+          alert("You can not purchase more than 3 seats.");
+          return;
+        }
+
+          clickedSeat.type =
+          clickedSeat.type === "selected" ? "available" : "selected";
+          console.log(clickedSeat);
       }
     },
 

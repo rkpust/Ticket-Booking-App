@@ -124,3 +124,12 @@
 flex: 1;
 padding-left: 22px;
 }
+
+.ticket-app__instruction {
+flex: 1;
+display: flex;
+padding-left: 22px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
