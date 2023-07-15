@@ -51,7 +51,28 @@
                 You can purchase a maximum of 3 seats.
                 </div>
                 <div class="ticket-app__right" v-else>
-                    {{ selectedSeats }}
+                    <div class="cart">
+                        <strong>Selected Seat(s)</strong>
+                        <table class="selected-seats">
+                            <thead>
+                                <tr>
+                                    <th>Seat</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A1</td>
+                                    <td>500</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Total</th>
+                                    <th>TK. 500</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

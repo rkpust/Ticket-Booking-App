@@ -1,3 +1,16 @@
+/*================= HTML Default Element ======================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+
 /*================= Ticket Booking App ======================= */
 
 .app-title {
@@ -121,15 +134,25 @@
 }
 
 .ticket-app__right {
-flex: 1;
-padding-left: 22px;
+  flex: 1;
+  padding-left: 22px;
 }
 
 .ticket-app__instruction {
-flex: 1;
-display: flex;
-padding-left: 22px;
-justify-content: center;
-align-items: center;
-text-align: center;
+  flex: 1;
+  display: flex;
+  padding-left: 22px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cart {
+  text-align: center;
+}
+
+.selected-seats th,
+.selected-seats td {
+  padding: 2px auto;
+  text-align: center;
 }
