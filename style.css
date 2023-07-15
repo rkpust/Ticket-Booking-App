@@ -50,3 +50,39 @@
     display: flex;
     margin-top: 11px;
 }
+
+.ticket-app__left {
+  width: 172px;
+}
+
+.bus {
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.bus__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bus__door {
+  width: 66px;
+  border: 1px solid gray;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bus__driver {
+  width: 66px;
+  border: 1px solid gray;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket-app__right {
+  
+}
