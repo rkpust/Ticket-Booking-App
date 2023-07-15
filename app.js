@@ -160,7 +160,7 @@ createApp({
         }
 
         if(this.selectedSeats.length > 2) {
-          alert("You can not purchase more than 3 seats.");
+          alert("You can not select more than 3 seats.");
           return;
         }
 
