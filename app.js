@@ -147,6 +147,15 @@ createApp({
       selectedSeats() {
         let ss = this.seats.filter(item => item.type === "selected");
         return ss;
+      },
+
+      totalCost() {
+        let tc = 0;
+        this.selectedSeats.forEach((seat) => {
+          tc += seat.price;
+        });
+
+        return tc;
       }
     },
 

@@ -61,14 +61,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>A1</td>
-                                    <td>500</td>
+                                <tr v-for="(seat, i) in selectedSeats" :key="seat.name">
+                                    <td>{{seat.name}}</td>
+                                    <td>{{seat.price}}</td>
                                 </tr>
 
                                 <tr>
                                     <th>Total</th>
-                                    <th>TK. 500</th>
+                                    <th>TK. {{totalCost}}</th>
                                 </tr>
                             </tbody>
                         </table>
