@@ -145,7 +145,19 @@ createApp({
     },
     computed: {},
 
-    methods: {},
+    methods: {
+      handleClick(i) {
+        let clickedSeat = this.seats[i];
+
+        if(clickedSeat.type === "sold" || clickedSeat.type === "booked") {
+          alert("This seat is already sold or booked.");
+          return;
+        }
+
+        clickedSeat.type =
+        clickedSeat.type === "selected" ? "available" : "selected";
+      }
+    },
 
     watch: {}
 }).mount('#app');

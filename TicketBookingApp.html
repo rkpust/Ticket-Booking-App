@@ -39,6 +39,7 @@
                             }"
                             v-for="(seat, i) in seats"
                             :key="seat.name"
+                            @click="handleClick(i)"
                             >{{ seat.name }}</div>
                         </div>
                     </div>
