@@ -168,7 +168,7 @@ createApp({
           return;
         }
 
-        if(this.selectedSeats.length > 2) {
+        if(clickedSeat.type == "available" && this.selectedSeats.length > 2) {
           alert("You can not select more than 3 seats.");
           return;
         }
