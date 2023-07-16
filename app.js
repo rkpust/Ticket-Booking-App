@@ -38,7 +38,7 @@ createApp({
                 },
                 {
                     name: "A4",
-                    type: "available",
+                    type: "sold",
                     price: 500
                 },
                 {
@@ -48,11 +48,11 @@ createApp({
                 },
                 {
                     name: "B2",
-                    type: "available",
+                    type: "booked",
                     price: 450
                 },{
                     name: "B3",
-                    type: "available",
+                    type: "sold",
                     price: 450
                 },
                 {
@@ -62,7 +62,7 @@ createApp({
                 },
                 {
                     name: "C1",
-                    type: "sold",
+                    type: "available",
                     price: 500
                   },
                   {
@@ -72,17 +72,17 @@ createApp({
                   },
                   {
                     name: "C3",
-                    type: "sold",
+                    type: "booked",
                     price: 500
                   },
                   {
                     name: "C4",
-                    type: "sold",
+                    type: "available",
                     price: 500
                   },
                   {
                     name: "D1",
-                    type: "available",
+                    type: "sold",
                     price: 400
                   },
                   {
@@ -112,12 +112,12 @@ createApp({
                   },
                   {
                     name: "E3",
-                    type: "booked",
+                    type: "available",
                     price: 300
                   },
                   {
                     name: "E4",
-                    type: "booked",
+                    type: "available",
                     price: 300
                   },
                   {
