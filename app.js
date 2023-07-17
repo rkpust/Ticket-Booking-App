@@ -167,6 +167,10 @@ createApp({
           tc += seat.price;
         });
 
+        if (this.appliedCoupon !== null) {
+          tc = tc - this.appliedCoupon.discount;
+        }
+
         return tc;
       }
     },

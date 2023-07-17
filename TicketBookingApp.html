@@ -66,6 +66,11 @@
                                     <td>{{seat.price}}</td>
                                 </tr>
 
+                                <tr v-if="appliedCoupon !== null">
+                                    <th>Discount</th>
+                                    <th>- {{ appliedCoupon.discount }}</th>
+                                </tr>
+
                                 <tr>
                                     <th>Total</th>
                                     <th>TK. {{totalCost}}</th>
@@ -78,8 +83,7 @@
                             v-model="couponCode"
                             placeholder="10 Digits Code" />
                         </p>
-                        <p v-else>Applied Coupon: {{ appliedCoupon.code }}</p>
-                        
+                        <p v-else>Applied Coupon: {{ appliedCoupon.code }}</p>                 
                     </div>
                 </div>
             </div>
