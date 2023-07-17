@@ -2,6 +2,16 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            coupons: [
+              {
+                code: "100TAKAOFF",
+                discount: 100
+              },
+              {
+                code: "200TAKAOFF",
+                discount: 200
+              }
+            ],
             seatStates: {
                 available: {
                     text: "Available",
