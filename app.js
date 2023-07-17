@@ -2,7 +2,9 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            coupons: [
+          appliedCoupon: null,
+          couponCode: "" , 
+          coupons: [
               {
                 code: "100TAKAOFF",
                 discount: 100
@@ -189,5 +191,23 @@ createApp({
       }
     },
 
-    watch: {}
+    watch: {
+      couponCode(newValue) {
+        if (newValue.length === 10) {
+          let searchedCoupons = this.coupons.filter(
+            (item) => item.code === newValue
+          );
+
+          if (searchedCoupons.length === 1) {
+            this.appliedCoupon = searchedCoupons[0];
+            this.couponCode = "";
+            alert("Congratulation! You have got discount TK. " + this.appliedCoupon.discount);
+            
+          }
+          else {
+            alert("Coupon is not valid!");
+          }
+        }  
+      }
+    }
 }).mount('#app');
