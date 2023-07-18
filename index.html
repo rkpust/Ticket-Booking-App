@@ -103,19 +103,23 @@
                 <table class="selected-seats">
                     <tr>
                         <th>Passenger Name</th>
-                        <td>Aaaaa</td>
+                        <td>{{ name }}</td>
                     </tr>
                     <tr>
                         <th>Passenger Mobile</th>
-                        <td>017xxxxxx</td>
+                        <td>{{ mobile }}</td>
                     </tr>
                     <tr>
                         <th>Seats</th>
-                        <td>A1, B2</td>
+                        <td>
+                            <div v-for="(seat, i) in selectedSeats" :key="name">
+                                <div>{{ seat.name }}</div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th>Total Cost</th>
-                        <td>650</td>
+                        <td>{{ totalCost}}</td>
                     </tr>
                 </table>
                 <br/>
