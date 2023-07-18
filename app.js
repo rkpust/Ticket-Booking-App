@@ -266,14 +266,6 @@ createApp({
         }  
       },
 
-      name(newValue, oldValue) {
-        if (! isNaN(newValue)) {
-          alert("The first letter of the name must not be a number.");
-          this.name = "";
-          return;
-        }
-      },
-
       mobile(newValue, oldValue) {
         if (isNaN(newValue)) {
           alert("Enter valid mobile number.");
