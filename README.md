@@ -9,3 +9,8 @@ Ticket Booking App is a simple web app that has a friendly UI where a user will
 - Show a table for selected or confirmed ticket details with price.
 
 
+# 🌐 Live
+[Ticket Booking App](https://rkpust.github.io/Ticket-Booking-App/)
+
+
+
