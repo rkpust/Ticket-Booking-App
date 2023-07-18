@@ -18,6 +18,11 @@ input[type="text"] {
   text-align: center;
 }
 
+button {
+  padding: 5px 11px;
+  margin: 5px;
+}
+
 
 /*================= Ticket Booking App ======================= */
 
@@ -167,4 +172,15 @@ input[type="text"] {
 
 .info {
   text-align: center;
+}
+
+.confirm-button {
+  border: 1px solid blue;
+  background-color: #006ea2;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 44px;
+  width: 98%;
+  margin-top: 10px;
+  font-size: 15px;
 }

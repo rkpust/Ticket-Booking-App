@@ -4,6 +4,7 @@ createApp({
         return {
           name: "",
           mobile: "01",
+          confirmed: false,
           appliedCoupon: null,
           couponCode: "" , 
           coupons: [
@@ -194,6 +195,20 @@ createApp({
           clickedSeat.type =
           clickedSeat.type === "selected" ? "available" : "selected";
           console.log(clickedSeat);
+      },
+
+      confirm() {
+        if (!this.name || !this.mobile) {
+          alert("Please, enter name and mobile.")
+          return;
+        }
+
+        if (this.mobile.length < 11) {
+          alert("Enter 11 digit mobile number.");
+          return;
+        }
+
+        this.confirmed = true;
       }
     },
 
