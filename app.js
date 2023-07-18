@@ -63,7 +63,7 @@ createApp({
                 },
                 {
                     name: "B2",
-                    type: "booked",
+                    type: "available",
                     price: 450
                 },{
                     name: "B3",
@@ -87,7 +87,7 @@ createApp({
                   },
                   {
                     name: "C3",
-                    type: "booked",
+                    type: "available",
                     price: 500
                   },
                   {
@@ -107,12 +107,12 @@ createApp({
                   },
                   {
                     name: "D3",
-                    type: "available",
+                    type: "booked",
                     price: 400
                   },
                   {
                     name: "D4",
-                    type: "available",
+                    type: "booked",
                     price: 400
                   },
                   {
@@ -122,7 +122,7 @@ createApp({
                   },
                   {
                     name: "E2",
-                    type: "available",
+                    type: "sold",
                     price: 300
                   },
                   {
@@ -147,7 +147,7 @@ createApp({
                   },
                   {
                     name: "F3",
-                    type: "available",
+                    type: "sold",
                     price: 300
                   },
                   {
@@ -172,7 +172,7 @@ createApp({
                   },
                   {
                     name: "G4",
-                    type: "available",
+                    type: "sold",
                     price: 275
                   }
             ]
