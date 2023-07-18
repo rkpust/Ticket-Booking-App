@@ -229,6 +229,21 @@ createApp({
         }
 
         this.confirmed = true;
+      },
+
+      resetData() {
+        if(this.confirmed == true) {
+          this.name = "";
+          this.mobile = "";
+          this.confirmed = false;
+          this.appliedCoupon = null;
+
+          this.seats.forEach((seat) => {
+            if (seat.type === "selected") {
+              seat.type = "sold";
+            }
+          });
+        }
       }
     },
 
