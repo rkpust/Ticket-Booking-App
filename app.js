@@ -154,6 +154,26 @@ createApp({
                     name: "F4",
                     type: "available",
                     price: 300
+                  },
+                  {
+                    name: "G1",
+                    type: "available",
+                    price: 275
+                  },
+                  {
+                    name: "G2",
+                    type: "available",
+                    price: 275
+                  },
+                  {
+                    name: "G3",
+                    type: "available",
+                    price: 275
+                  },
+                  {
+                    name: "G4",
+                    type: "available",
+                    price: 275
                   }
             ]
         };
