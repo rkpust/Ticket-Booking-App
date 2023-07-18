@@ -2,6 +2,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+          name: "",
+          mobile: "01",
           appliedCoupon: null,
           couponCode: "" , 
           coupons: [
@@ -212,6 +214,26 @@ createApp({
             alert("Coupon is not valid!");
           }
         }  
+      },
+
+      name(newValue, oldValue) {
+        if (! isNaN(newValue)) {
+          alert("The first letter of the name must not be a number.");
+          this.name = "";
+          return;
+        }
+      },
+
+      mobile(newValue, oldValue) {
+        if (isNaN(newValue)) {
+          alert("Enter valid mobile number.");
+          this.mobile = oldValue;
+        }
+
+        if (newValue.length > 11) {
+          alert("Enter 11 digit mobile number.");
+          this.mobile = oldValue;
+        }
       }
     }
 }).mount('#app');

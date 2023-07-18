@@ -83,7 +83,13 @@
                             v-model="couponCode"
                             placeholder="10 Digits Code" />
                         </p>
-                        <p v-else>Applied Coupon: {{ appliedCoupon.code }}</p>                 
+                        <p v-else>Applied Coupon: {{ appliedCoupon.code }}</p>
+                    </div>
+
+                    <div class="info">
+                        <label>Name: </label><input type="text"  v-model="name" placeholder="Your Full Name" required>
+                        <br/>
+                        <label>Mobile: </label><input type="text"  v-model="mobile" placeholder="11 Digit Mobile Number" required>
                     </div>
                 </div>
             </div>

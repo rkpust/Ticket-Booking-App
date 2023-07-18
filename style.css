@@ -14,6 +14,8 @@ input[type="text"] {
   padding: 3px 9px;
   margin: 5px;
   border: 2px solid tomato;
+  width: auto;
+  text-align: center;
 }
 
 
@@ -160,5 +162,9 @@ input[type="text"] {
 .selected-seats th,
 .selected-seats td {
   padding: 2px auto;
+  text-align: center;
+}
+
+.info {
   text-align: center;
 }
