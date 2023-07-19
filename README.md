@@ -12,10 +12,9 @@ Ticket Booking App is a simple web app that has a friendly UI where a user will
 # To Get "Ticket Booking App" Locally
 You must have a git application and internet connection in your device. Then run this command.
 
-    ```bash
+  ```bash
       git clone https://github.com/rkpust/Ticket-Booking-App.git
-    ```
-
+  ```
 Then, go to "Ticket-Booking-App" directory and open the index.html file in browser.
 
 
